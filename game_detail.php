@@ -41,10 +41,11 @@
       <?php include "index_componets/cards.php"; ?>
     </div>
   </body>
+
+  <div style="position: fixed; bottom: 0; left: 0; width: 100%;">
+      <?php include 'components/footer.html'; ?>
+  </div>
 </html>
-<?php
-  echo file_get_contents('components/footer.html');
-?>
 
 <script src="index_componets/random_card_gerater.js" defer></script>
 <script src="assets/js/basket.js"></script>
@@ -99,7 +100,7 @@
       color: white;
     }
     .sim{
-      margin-left:50px;
+      text-align: center;
     }
     .head { 
       display: flex; 
