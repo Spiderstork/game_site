@@ -1,0 +1,47 @@
+<nav>
+  <div class="logo">
+    <i class="fa-solid fa-mug-hot"></i>
+    Coffee Gaming
+  </div>
+  
+  <div class="navlinks">
+    <a href="/knock_of_steam/index.php">Home</a>
+    <a href="/knock_of_steam/aboutPage.php">About</a>
+  </div>
+
+  <div class="cart" id="cart-btn">
+    <a href="#">
+      <i class="fa-solid fa-shopping-cart"></i>
+      <span id="cart-count" class="cart-count">0</span>
+    </a>
+  </div>
+</nav>
+
+
+<link rel="stylesheet" href="assets/css/nav.css">
+
+<script>
+  const navLinks = document.querySelectorAll('.navlinks a');
+
+  function setActiveLink(link) {
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    localStorage.setItem('activeNav', link.getAttribute('href'));
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      setActiveLink(this);
+    });
+  });
+
+  // On page load, check localStorage
+  const activeHref = localStorage.getItem('activeNav');
+  if (activeHref) {
+    const activeLink = document.querySelector(`.navlinks a[href="${activeHref}"]`);
+    if (activeLink) {
+      setActiveLink(activeLink);
+    }
+  }
+</script>
+
