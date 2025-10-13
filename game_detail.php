@@ -37,8 +37,8 @@
       <h1>Similar games</h1>
     </div>
     <div style="margin-bottom: 20px">
-      <?php include_once "card_template.php"; ?>
-      <?php include "cards.php"; ?>
+      <?php include_once "home_page/card_template.php"; ?>
+      <?php include "home_page/cards.php"; ?>
     </div>
   </body>
 </html>

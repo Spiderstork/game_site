@@ -9,18 +9,18 @@
       echo file_get_contents('components/basket.html');
     ?>
 
-    <?php include "small_carousel.php"; ?>
+    <?php include "index_componets/small_carousel.php"; ?>
 
     <hr style="margin:40px 0; border:1px">
 
-    <?php include_once "card_template.php"; ?>
-    <?php include "cards.php"; ?>
+    <?php include_once "index_componets/card_template.php"; ?>
+    <?php include "index_componets/cards.php"; ?>
     
-    <?php include "carousel.php"; ?>
-    <?php include "cards.php"; ?>
+    <?php include "index_componets/carousel.php"; ?>
+    <?php include "index_componets/cards.php"; ?>
 
     <hr style="margin:10px 0; border:1px">
-    <?php include "cards.php"; ?>
+    <?php include "index_componets/cards.php"; ?>
 
     <hr style="margin:10px 0; border:1px">
 
