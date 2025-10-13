@@ -37,8 +37,8 @@
       <h1>Similar games</h1>
     </div>
     <div style="margin-bottom: 20px">
-      <?php include_once "home_page/card_template.php"; ?>
-      <?php include "home_page/cards.php"; ?>
+      <?php include_once "index_componets/card_template.php"; ?>
+      <?php include "index_componets/cards.php"; ?>
     </div>
   </body>
 </html>
@@ -46,7 +46,7 @@
   echo file_get_contents('components/footer.html');
 ?>
 
-<script src="random_card_gerater.js" defer></script>
+<script src="index_componets/random_card_gerater.js" defer></script>
 <script src="assets/js/basket.js"></script>
 <script>
   const url = new URL(window.location.href);

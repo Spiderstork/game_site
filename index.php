@@ -27,6 +27,6 @@
     <?php echo file_get_contents('components/footer.html'); ?>
 
     <script src="assets/js/basket.js"></script>
-    <script src="random_card_gerater.js" defer></script>
+    <script src="index_componets/random_card_gerater.js" defer></script>
   </body>
 </html>
